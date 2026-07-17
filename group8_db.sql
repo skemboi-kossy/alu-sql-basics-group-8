@@ -30,6 +30,9 @@ INSERT INTO Courses (course_name, credits, faculty_id, classroom_id) VALUES
 ('Circuits and Systems', 4, 4, 2),
 ('African Philosophy', 3, 5, 5);
 
+--shima
+UPDATE Courses SET credits = 5 WHERE course_id = 4;
+
 
 CREATE TABLE Extra_Curricular_Activities (
     activity_id        INT NOT NULL AUTO_INCREMENT,
