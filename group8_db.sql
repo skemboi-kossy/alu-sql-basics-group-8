@@ -32,6 +32,18 @@ CREATE TABLE Extra_Curricular_Activities (
     FOREIGN KEY (faculty_advisor_id) REFERENCES Faculty(faculty_id)
 );
 
+
+--shima
+
+INSERT INTO Courses (course_name, credits, faculty_id, classroom_id) VALUES
+('Introduction to Programming', 4, 1, 3),
+('Calculus I', 3, 2, 1),
+('Principles of Marketing', 3, 3, 4),
+('Circuits and Systems', 4, 4, 2),
+('African Philosophy', 3, 5, 5);
+
+
+
 INSERT INTO Extra_Curricular_Activities (activity_name, activity_type, meeting_day, faculty_advisor_id) VALUES
 ('Debate Club',        'Academic', 'Monday',    1),
 ('Football Team',      'Sports',   'Wednesday', 2),
