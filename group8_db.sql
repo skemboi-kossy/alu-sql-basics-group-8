@@ -22,6 +22,24 @@ INSERT INTO Courses (course_name, credits, faculty_id, classroom_id) VALUES
 ('Circuits and Systems', 4, 4, 2),
 ('African Philosophy', 3, 5, 5);
 
+--shima
+INSERT INTO Courses (course_name, credits, faculty_id, classroom_id) VALUES
+('Introduction to Programming', 4, 1, 3),
+('Calculus I', 3, 2, 1),
+('Principles of Marketing', 3, 3, 4),
+('Circuits and Systems', 4, 4, 2),
+('African Philosophy', 3, 5, 5);
+
+--shima
+UPDATE Courses SET credits = 5 WHERE course_id = 4;
+
+--shima 
+DELETE FROM Courses WHERE course_id = 5 AND 1 = 0;
+
+--shima
+SELECT * FROM Courses WHERE credits >= 4;
+
+
 CREATE TABLE Extra_Curricular_Activities (
     activity_id        INT NOT NULL AUTO_INCREMENT,
     activity_name      VARCHAR(100) NOT NULL,
@@ -31,6 +49,11 @@ CREATE TABLE Extra_Curricular_Activities (
     PRIMARY KEY (activity_id),
     FOREIGN KEY (faculty_advisor_id) REFERENCES Faculty(faculty_id)
 );
+
+
+
+
+
 
 INSERT INTO Extra_Curricular_Activities (activity_name, activity_type, meeting_day, faculty_advisor_id) VALUES
 ('Debate Club',        'Academic', 'Monday',    1),
