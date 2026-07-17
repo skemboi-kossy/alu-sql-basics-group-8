@@ -13,8 +13,14 @@ CREATE TABLE Courses (
         ON DELETE SET NULL
         ON UPDATE CASCADE
 );
+-- shima
 
-
+INSERT INTO Courses (course_name, credits, faculty_id, classroom_id) VALUES
+('Introduction to Programming', 4, 1, 3),
+('Calculus I', 3, 2, 1),
+('Principles of Marketing', 3, 3, 4),
+('Circuits and Systems', 4, 4, 2),
+('African Philosophy', 3, 5, 5);
 
 CREATE TABLE Extra_Curricular_Activities (
     activity_id        INT NOT NULL AUTO_INCREMENT,
