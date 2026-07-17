@@ -36,6 +36,9 @@ UPDATE Courses SET credits = 5 WHERE course_id = 4;
 --shima 
 DELETE FROM Courses WHERE course_id = 5 AND 1 = 0;
 
+--shima
+SELECT * FROM Courses WHERE credits >= 4;
+
 
 CREATE TABLE Extra_Curricular_Activities (
     activity_id        INT NOT NULL AUTO_INCREMENT,
